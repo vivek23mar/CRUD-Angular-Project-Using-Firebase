@@ -1,0 +1,29 @@
+<div class="au-card ">
+    <table class="table table-hover table-bordered">
+        <thead  class="table-info ">
+           <tr>
+               <th>S.No.</th>
+               <th>Blog Category</th>
+               <th>Blog TItle</th>
+               <th>Description</th>
+               <th>Date</th>
+               <th></th>
+               <th></th>
+
+           </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of blogArray ; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{data.blogCategory}}</td>
+                <td>{{data.blogTitle}}</td>
+                <td>{{data.blogDes}}</td>
+                <td>{{data.blogDate}}</td>
+                
+                <td><button type="button" class="btn btn-primary" (click)="editBlog(data)">Edit</button></td>
+                <td><button type="button" class="btn btn-danger" (click)="delete(data.$key)">Delete</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

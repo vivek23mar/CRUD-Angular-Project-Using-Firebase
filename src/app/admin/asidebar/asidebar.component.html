@@ -1,0 +1,43 @@
+<aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+        <a routerLink="./ahome">
+            <img src="../../assets/admin/images/icon/logo.png" alt="Cool Admin" />
+        </a>
+    </div>
+    <div class="menu-sidebar__content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar__list">
+                <li class="active has-sub">
+                    <a class="js-arrow" routerLink="#">
+                        <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a routerLink="./category">
+                        <i class="fas fa-chart-bar"></i>Category</a>
+                </li>
+                <li>
+                    <a (click)=addcat($event) class="pointer">
+                        <i class="fas fa-table"></i>Add Category</a>
+                </li>
+                <li>
+                    <a routerLink="./blog">
+                        <i class="far fa-check-square"></i>Blog</a>
+                </li>
+                <li>
+                    <a (click)=addBlog($event) class="pointer">
+                        <i class="fas fa-table"></i>Add Blog</a>
+                </li>
+                <li>
+                    <a routerLink="map.html">
+                        <i class="fas fa-map-marker-alt"></i>Maps</a>
+                </li>
+                <li class="has-sub">
+                    <a class="js-arrow" routerLink="#">
+                        <i class="fas fa-copy"></i>Pages</a>
+                   
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</aside>
